@@ -14,6 +14,8 @@ while True:
     pessoas.append(dados[:])
     dados.clear()
     continuar = input('Quer continuar?[S/N]')
+    while continuar != 'S' or continuar != 'N':
+        continuar = input('Quer continuar?[S/N]').strip().upper()
     if continuar in 'Nn':
         break
 print('-='*30)
