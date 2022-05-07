@@ -1,0 +1,8 @@
+N = input('\033[30mDigite qualquer coisa: ')
+print('PROCESSANDO...')
+print('\033[30m--' * 20)
+print('\033[31mé alfa numerico?', N.isalpha())
+print('\033[33mé um numero?', N.isnumeric())
+print('\033[34mé letra minuscula?', N.islower())
+print('\033[32mé letra maiuscula?', N.isupper())
+print('\033[30m--' * 20)

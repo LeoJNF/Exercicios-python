@@ -1,0 +1,5 @@
+kmp = float(input('Quantos km você percorreu com o carro?'))
+qtdd = int(input('Quantos dias você ficou com o carro?'))
+print('Por ter percorrido com o carro {}km você tem que pagar R${:.2f}'.format(kmp, kmp*0.15))
+print('E por ter ficado com o carro por {} dias voce tem que pagar R${:.2f}'.format(qtdd, qtdd*60))
+print('O total a pagar é de R${:.2f}'.format(kmp * 0.15 + qtdd * 60))
