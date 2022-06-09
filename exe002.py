@@ -1,9 +1,19 @@
-nome = str(input('Digite seu nome: '))
-peso = float(input('Digite seu peso: '))
-altura = float(input('Digite sua altura: '))
-print('prazer em te conhecer, {}!'.format(nome), 'Você pesa', peso, 'e tem', altura, 'de altura.')
+from titulo import titulo
 
-
-
-
-
+numeros = list()
+pares = list()
+impares = list()
+titulo('Dados aleátorios sobre inteiro')
+for n in range(5):
+    numeros.append(int(input(f'Digite o {n+1}º valor: ')))
+print('Numeros pares identificados: ')
+for n in numeros:
+    if n % 2 == 0:
+        print(n, end=' ')
+        pares.append(n)
+    else:
+        impares.append(n)
+print(f'\nA soma dos numeros par: {sum(pares)}')
+print('Numeros impares identificados: ')
+for n in impares:
+    print(n, end=' ')
